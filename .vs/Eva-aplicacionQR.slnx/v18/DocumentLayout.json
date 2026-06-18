@@ -1,21 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\",
+  "WorkspaceRootPath": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\tampi\\onedrive\\desktop\\eva-aplicacionqr\\eva-aplicacionqr\\views\\newpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\views\\newpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\tampi\\onedrive\\desktop\\eva-aplicacionqr\\eva-aplicacionqr\\views\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\views\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\tampi\\onedrive\\desktop\\eva-aplicacionqr\\eva-aplicacionqr\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\tampi\\onedrive\\desktop\\eva-aplicacionqr\\eva-aplicacionqr\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\views\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\views\\newpage1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\views\\newpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\views\\newpage1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|c:\\users\\fabia\\onedrive\\desktop\\trabajo.net\\eva-aplicacionqr\\eva-aplicacionqr\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B9F0FE7E-854C-8B4B-B391-1EAA7A1944FC}|Eva-aplicacionQR\\Eva-aplicacionQR.csproj|solutionrelative:eva-aplicacionqr\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -26,19 +42,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "Eva-aplicacionQR\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\MauiProgram.cs",
+              "RelativeToolTip": "Eva-aplicacionQR\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T16:59:02.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Eva-aplicacionQR\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\MainPage.xaml.cs",
+              "RelativeToolTip": "Eva-aplicacionQR\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T16:58:58.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "Eva-aplicacionQR\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\AppShell.xaml.cs",
+              "RelativeToolTip": "Eva-aplicacionQR\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T16:58:56.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Eva-aplicacionQR\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\AppShell.xaml",
+              "RelativeToolTip": "Eva-aplicacionQR\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T16:58:51.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "NewPage1.xaml",
-              "DocumentMoniker": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml",
               "RelativeDocumentMoniker": "Eva-aplicacionQR\\Views\\NewPage1.xaml",
-              "ToolTip": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml",
               "RelativeToolTip": "Eva-aplicacionQR\\Views\\NewPage1.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -47,11 +123,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml.cs",
               "RelativeDocumentMoniker": "Eva-aplicacionQR\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml.cs",
               "RelativeToolTip": "Eva-aplicacionQR\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,11 +136,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml",
               "RelativeDocumentMoniker": "Eva-aplicacionQR\\App.xaml",
-              "ToolTip": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\App.xaml",
               "RelativeToolTip": "Eva-aplicacionQR\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -73,11 +149,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "NewPage1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml.cs",
               "RelativeDocumentMoniker": "Eva-aplicacionQR\\Views\\NewPage1.xaml.cs",
-              "ToolTip": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml.cs",
+              "ToolTip": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Views\\NewPage1.xaml.cs",
               "RelativeToolTip": "Eva-aplicacionQR\\Views\\NewPage1.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eva-aplicacionQR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3656f3ebf5a5ddf5a901a58b539f175e6e6566e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eva-aplicacionQR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eva-aplicacionQR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

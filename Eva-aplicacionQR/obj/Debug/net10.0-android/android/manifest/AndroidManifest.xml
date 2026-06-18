@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
     Una herramienta generó este código.
-    Se generó desde C:\Users\tampi\OneDrive\Desktop\proyecto-gimnasio\Eva-aplicacionQR\Eva-aplicacionQR\Platforms\Android\AndroidManifest.xml
+    Se generó desde C:\Users\fabia\OneDrive\Desktop\trabajo.net\Eva-aplicacionQR\Eva-aplicacionQR\Platforms\Android\AndroidManifest.xml
     Los cambios realizados en este archivo pueden generar un comportamiento incorrecto y se perderán si
     se regenera el contenido.
 -->
@@ -9,6 +9,9 @@
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="36" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
   <permission android:name="com.companyname.evaaplicacionqr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
   <uses-permission android:name="com.companyname.evaaplicacionqr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
   <application android:name="crc64e62e93322dc38033.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/appicon" android:label="Eva-aplicacionQR" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true">
@@ -49,5 +52,12 @@
     </receiver>
     <uses-library android:name="androidx.window.extensions" android:required="false" />
     <uses-library android:name="androidx.window.sidecar" android:required="false" />
+    <!--
+        Service for holding metadata. Cannot be instantiated.
+        Metadata will be merged from other manifests.
+        -->
+    <service android:name="androidx.camera.core.impl.MetadataHolderService" android:enabled="false" android:exported="false" tools:ignore="Instantiatable,MissingServiceExportedEqualsTrue" tools:node="merge">
+      <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+    </service>
   </application>
 </manifest>

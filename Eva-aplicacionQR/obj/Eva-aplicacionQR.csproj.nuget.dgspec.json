@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj": {}
+    "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj": {
+    "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj",
+        "projectUniqueName": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj",
         "projectName": "Eva-aplicacionQR",
-        "projectPath": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj",
-        "packagesPath": "C:\\Users\\tampi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tampi\\OneDrive\\Desktop\\Eva-aplicacionQR\\Eva-aplicacionQR\\obj\\",
+        "projectPath": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\Eva-aplicacionQR.csproj",
+        "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fabia\\OneDrive\\Desktop\\trabajo.net\\Eva-aplicacionQR\\Eva-aplicacionQR\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tampi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -74,11 +74,11 @@
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.0.9, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.20, )"
+              "version": "[10.0.71, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -395,11 +395,11 @@
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.0.9, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.20, )"
+              "version": "[10.0.71, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -716,11 +716,11 @@
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.0.9, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.20, )"
+              "version": "[10.0.71, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -1038,11 +1038,11 @@
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[10.0.9, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[10.0.20, )"
+              "version": "[10.0.71, )"
             },
             "ZXing.Net.Maui.Controls": {
               "target": "Package",

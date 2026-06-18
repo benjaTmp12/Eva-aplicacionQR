@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="Eva-aplicacionQR" mvid="ed486ba7b1e54bd999021b6fc07f0540">
+  <java-to-managed>
+    <entry java-name="crc64e62e93322dc38033/MainActivity" managed-name="Eva_aplicacionQR.MainActivity, Eva-aplicacionQR" managed-type-token-id="33554442" />
+    <entry java-name="crc64e62e93322dc38033/MainApplication" managed-name="Eva_aplicacionQR.MainApplication, Eva-aplicacionQR" managed-type-token-id="33554443" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64e62e93322dc38033/MainActivity" managed-name="Eva_aplicacionQR.MainActivity, Eva-aplicacionQR" managed-type-token-id="33554442" />
+    <entry java-name="crc64e62e93322dc38033/MainApplication" managed-name="Eva_aplicacionQR.MainApplication, Eva-aplicacionQR" managed-type-token-id="33554443" />
+  </managed-to-java>
+</api>
