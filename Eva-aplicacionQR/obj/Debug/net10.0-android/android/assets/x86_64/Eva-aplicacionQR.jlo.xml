@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc64e62e93322dc38033" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="Eva_aplicacionQR.MainActivity, Eva-aplicacionQR">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc64e62e93322dc38033" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="Eva_aplicacionQR.MainApplication, Eva-aplicacionQR" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="Eva-aplicacionQR" module-name="Eva-aplicacionQR.dll">
+    <type assembly-qualified-name="Eva_aplicacionQR.MainActivity, Eva-aplicacionQR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="eva_aplicacionqr.MainActivity" java-key="crc64e62e93322dc38033.MainActivity" managed-key="Eva_aplicacionQR.MainActivity" partial-assembly-qualified-name="Eva_aplicacionQR.MainActivity, Eva-aplicacionQR" />
+    <type assembly-qualified-name="Eva_aplicacionQR.MainApplication, Eva-aplicacionQR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="eva_aplicacionqr.MainApplication" java-key="crc64e62e93322dc38033.MainApplication" managed-key="Eva_aplicacionQR.MainApplication" partial-assembly-qualified-name="Eva_aplicacionQR.MainApplication, Eva-aplicacionQR" />
+  </acw-types>
+</api>
