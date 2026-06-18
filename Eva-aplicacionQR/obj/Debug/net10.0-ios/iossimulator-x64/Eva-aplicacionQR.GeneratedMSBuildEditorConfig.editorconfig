@@ -76,13 +76,3 @@ build_metadata.AdditionalFiles.Inflator = SourceGen
 build_metadata.AdditionalFiles.NoWarn = 
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
-
-[C:/Users/tampi/OneDrive/Desktop/Eva-aplicacionQR/Eva-aplicacionQR/Views/NewPage1.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Eva_aplicacionQR.Views.NewPage1.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\NewPage1.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\NewPage1.xaml
-build_metadata.AdditionalFiles.Inflator = SourceGen
-build_metadata.AdditionalFiles.NoWarn = 
-build_metadata.AdditionalFiles.EnableDiagnostics = 
-build_metadata.AdditionalFiles.LineInfo = 
