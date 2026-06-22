@@ -1,0 +1,57 @@
+## Ignore Visual Studio Temporary Files, Build Results, and Artifacts
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.usercontents
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono auto generated files
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Re]leases/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Log]s/
+[Ff]ermat/
+
+# Visual Studio cache directory
+.vs/
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# MacOS / OS X files
+.DS_Store
+
+# Windows image caches
+Thumbs.db
+ehthumbs.db
+
+# Mobile tools (Android/iOS specific temp/generated files)
+*.apk
+*.ap_
+*.aab
+*.dex
