@@ -28,7 +28,7 @@ namespace Eva_aplicacionQR
 
                 if (status != PermissionStatus.Granted)
                 {
-                    await DisplayAlertAsync("Permiso Denegado", "Se requiere acceso a la cámara", "OK");
+                    await DisplayAlert("Permiso Denegado", "Se requiere acceso a la cámara", "OK");
                     return;
                 }
 
