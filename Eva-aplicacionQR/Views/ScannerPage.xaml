@@ -59,7 +59,6 @@
                                          HorizontalOptions="Center"
                                          Spacing="12"
                                          IsVisible="True">
-                        <Label Text="📷" FontSize="52" HorizontalOptions="Center"/>
                         <Label Text="Presiona 'Activar Cámara'"
                                TextColor="#94A3B8" FontSize="13"
                                HorizontalOptions="Center" />
@@ -75,7 +74,7 @@
                     StrokeShape="RoundRectangle 16"
                     BackgroundColor="#1E293B" Padding="15">
                 <VerticalStackLayout Spacing="6">
-                    <Label x:Name="StatusLabel" Text="🔍 Esperando..." TextColor="#60A5FA" FontAttributes="Bold" FontSize="15" HorizontalOptions="Center" />
+                    <Label x:Name="StatusLabel" Text="Esperando..." TextColor="#60A5FA" FontAttributes="Bold" FontSize="15" HorizontalOptions="Center" />
                     <Label x:Name="ResultLabel" Text="Código: Ninguno" TextColor="#E2E8F0" FontSize="14" HorizontalOptions="Center" />
                     <Label x:Name="TimestampLabel" Text="Hora: --:--" TextColor="#94A3B8" FontSize="12" HorizontalOptions="Center" />
                 </VerticalStackLayout>

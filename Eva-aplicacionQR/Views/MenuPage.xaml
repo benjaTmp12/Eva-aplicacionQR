@@ -29,13 +29,13 @@
                         <Label Text="Activa la cámara para registrarte" TextColor="#94A3B8" FontSize="13" />
                     </VerticalStackLayout>
                     <Button Grid.Column="1"
-                            Text="📷"
-                            FontSize="24"
+                            Text="Entrar"
+                            FontAttributes="Bold"
                             BackgroundColor="#6366F1"
                             TextColor="#FFFFFF"
-                            CornerRadius="25"
-                            HeightRequest="50"
-                            WidthRequest="50"
+                            CornerRadius="8"
+                            HeightRequest="40"
+                            WidthRequest="85"
                             Clicked="OnScannerClicked" />
                 </Grid>
             </Border>
@@ -50,13 +50,13 @@
                         <Label Text="Revisa tus clases anteriores" TextColor="#94A3B8" FontSize="13" />
                     </VerticalStackLayout>
                     <Button Grid.Column="1"
-                            Text="📊"
-                            FontSize="24"
+                            Text="Ver"
+                            FontAttributes="Bold"
                             BackgroundColor="#0EA5E9"
                             TextColor="#FFFFFF"
-                            CornerRadius="25"
-                            HeightRequest="50"
-                            WidthRequest="50"
+                            CornerRadius="8"
+                            HeightRequest="40"
+                            WidthRequest="85"
                             Clicked="OnHistoryClicked" />
                 </Grid>
             </Border>

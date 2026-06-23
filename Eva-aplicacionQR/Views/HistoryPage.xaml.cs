@@ -15,16 +15,16 @@ public partial class HistoryPage : ContentPage
         ActualizarUI();
     }
 
-    private void ActualizarUI()
+    private async void ActualizarUI()
     {
-        var historial = AsistenciaService.Historial;
-        TotalLabel.Text = $"Total: {AsistenciaService.TotalAsistencias} clases";
+        var historial = await AsistenciaService.ObtenerHistorialAsync();
+        TotalLabel.Text = $"Total: {historial.Count} clases";
 
         if (historial.Count > 0)
         {
             SinRegistrosLayout.IsVisible = false;
             RegistrosLista.IsVisible = true;
-            RegistrosLista.ItemsSource = historial.OrderByDescending(r => r.FechaHora).ToList();
+            RegistrosLista.ItemsSource = historial; // Ya viene ordenado de BD
         }
         else
         {

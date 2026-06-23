@@ -35,7 +35,7 @@ public partial class ScannerPage : ContentPage
             LaserLine.IsVisible = true;
             ResetBtn.Text = "Detener Cámara";
             ResetBtn.BackgroundColor = Color.FromArgb("#EF4444");
-            StatusLabel.Text = "📡 Escaneando...";
+            StatusLabel.Text = "Escaneando...";
             StatusLabel.TextColor = Color.FromArgb("#34D399");
         }
         else
@@ -46,7 +46,7 @@ public partial class ScannerPage : ContentPage
             LaserLine.IsVisible = false;
             ResetBtn.Text = "Activar Cámara";
             ResetBtn.BackgroundColor = Color.FromArgb("#334155");
-            StatusLabel.Text = "🔍 Esperando...";
+            StatusLabel.Text = "Esperando...";
             StatusLabel.TextColor = Color.FromArgb("#60A5FA");
             ResultLabel.Text = "Código: Ninguno";
             TimestampLabel.Text = "Hora: --:--";
@@ -69,7 +69,7 @@ public partial class ScannerPage : ContentPage
         });
     }
 
-    private void ProcesarCodigo(string textoCodigo)
+    private async void ProcesarCodigo(string textoCodigo)
     {
         barcodeReader.IsDetecting = false;
         _camaraActiva = false;
@@ -78,12 +78,20 @@ public partial class ScannerPage : ContentPage
         ResetBtn.Text = "Activar Cámara";
         ResetBtn.BackgroundColor = Color.FromArgb("#334155");
 
-        StatusLabel.Text = "✅ Asistencia Registrada";
-        StatusLabel.TextColor = Color.FromArgb("#34D399");
         ResultLabel.Text = $"Código: {textoCodigo}";
         TimestampLabel.Text = $"Hora: {DateTime.Now:HH:mm:ss}";
 
-        AsistenciaService.RegistrarAsistencia(textoCodigo);
+        try
+        {
+            await AsistenciaService.RegistrarAsistenciaAsync(textoCodigo);
+            StatusLabel.Text = "Asistencia Registrada";
+            StatusLabel.TextColor = Color.FromArgb("#34D399");
+        }
+        catch (Exception)
+        {
+            StatusLabel.Text = "Error: Sin conexión BD";
+            StatusLabel.TextColor = Color.FromArgb("#EF4444");
+        }
     }
 
     private async void OnBackClicked(object sender, EventArgs e)

@@ -1,34 +1,63 @@
 using Eva_aplicacionQR.Modelos;
+using MySqlConnector;
 
 namespace Eva_aplicacionQR.servicios;
 
-/// <summary>
-/// Servicio que maneja la lógica de asistencia.
-/// Guarda los registros en memoria (lista estática) hasta que implementemos MySQL en el Hito 4.
-/// Al ser estático, todos las páginas de la app comparten el mismo historial.
-/// </summary>
+
 public static class AsistenciaService
 {
-    // Lista estática que actúa como "base de datos temporal" en memoria
-    public static List<RegistroAsistencia> Historial { get; } = new List<RegistroAsistencia>();
+    // Si pruebas en el Emulador Android, la IP debe ser 10.0.2.2 para acceder a tu localhost (XAMPP/WAMP)
+    // Si pruebas la app en "Windows Machine", la IP debe ser localhost o 127.0.0.1
+    private const string ConnectionString = "Server=10.0.2.2;Database=eva_asistencia;Uid=root;Pwd=;";
 
-    /// <summary>
-    /// Agrega un nuevo registro de asistencia al historial.
-    /// </summary>
-    public static void RegistrarAsistencia(string codigoQR)
+    public static async Task RegistrarAsistenciaAsync(string codigoQR)
     {
-        var nuevoRegistro = new RegistroAsistencia
+        try
         {
-            CodigoClase = codigoQR,
-            FechaHora = DateTime.Now
-        };
+            using var connection = new MySqlConnection(ConnectionString);
+            await connection.OpenAsync();
 
-        Historial.Add(nuevoRegistro);
-        System.Diagnostics.Debug.WriteLine($"[Servicio] Registrado: {codigoQR} a las {nuevoRegistro.FechaHoraFormateada}");
+            var query = "INSERT INTO RegistroAsistencia (CodigoClase, FechaHora) VALUES (@codigo, @fecha)";
+            using var command = new MySqlCommand(query, connection);
+            command.Parameters.AddWithValue("@codigo", codigoQR);
+            command.Parameters.AddWithValue("@fecha", DateTime.Now);
+
+            await command.ExecuteNonQueryAsync();
+            System.Diagnostics.Debug.WriteLine($"[Servicio] Registrado en DB: {codigoQR}");
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"[Error DB] {ex.Message}");
+            throw; // Re-lanzar para manejar el error en la UI si es necesario
+        }
     }
 
-    /// <summary>
-    /// Devuelve el total de clases a las que el usuario ha asistido.
-    /// </summary>
-    public static int TotalAsistencias => Historial.Count;
+    public static async Task<List<RegistroAsistencia>> ObtenerHistorialAsync()
+    {
+        var historial = new List<RegistroAsistencia>();
+        try
+        {
+            using var connection = new MySqlConnection(ConnectionString);
+            await connection.OpenAsync();
+
+            var query = "SELECT CodigoClase, FechaHora FROM RegistroAsistencia ORDER BY FechaHora DESC";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                historial.Add(new RegistroAsistencia
+                {
+                    CodigoClase = reader.GetString("CodigoClase"),
+                    FechaHora = reader.GetDateTime("FechaHora")
+                });
+            }
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"[Error DB] {ex.Message}");
+        }
+        
+        return historial;
+    }
 }

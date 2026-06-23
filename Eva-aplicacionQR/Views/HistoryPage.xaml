@@ -22,7 +22,6 @@
         <!-- Lista de registros -->
         <Grid Grid.Row="2">
             <VerticalStackLayout x:Name="SinRegistrosLayout" VerticalOptions="Center" HorizontalOptions="Center" Spacing="10" IsVisible="True">
-                <Label Text="📭" FontSize="48" HorizontalOptions="Center" />
                 <Label Text="Aún no tienes registros." TextColor="#94A3B8" FontSize="14" HorizontalOptions="Center" />
             </VerticalStackLayout>
 
@@ -31,7 +30,13 @@
                     <DataTemplate>
                         <Border Stroke="#1E3A5F" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#1E293B" Padding="15" Margin="0,0,0,10">
                             <Grid ColumnDefinitions="Auto, *" ColumnSpacing="15">
-                                <Label Grid.Column="0" Text="✅" FontSize="20" VerticalOptions="Center"/>
+                                <Border Grid.Column="0"
+                                        WidthRequest="10"
+                                        HeightRequest="10"
+                                        StrokeShape="RoundRectangle 5"
+                                        BackgroundColor="#10B981"
+                                        StrokeThickness="0"
+                                        VerticalOptions="Center" />
                                 <VerticalStackLayout Grid.Column="1" Spacing="3" VerticalOptions="Center">
                                     <Label Text="{Binding CodigoClase}" TextColor="#FFFFFF" FontAttributes="Bold" FontSize="15" />
                                     <Label Text="{Binding FechaHoraFormateada}" TextColor="#94A3B8" FontSize="12" />
