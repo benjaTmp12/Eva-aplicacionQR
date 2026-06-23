@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eva_aplicacionQR.Views.MenuPage"
+             BackgroundColor="#0F172A"
+             Title="Menú Principal">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+
+            <!-- Saludo -->
+            <VerticalStackLayout Spacing="5" Margin="0,0,0,20">
+                <Label Text="¡Hola de nuevo!"
+                       TextColor="#94A3B8"
+                       FontSize="16" />
+                <Label Text="¿Qué deseas hacer hoy?"
+                       TextColor="#FFFFFF"
+                       FontAttributes="Bold"
+                       FontSize="26" />
+            </VerticalStackLayout>
+
+            <!-- Botón 1: Escáner -->
+            <Border Stroke="#334155" StrokeThickness="1"
+                    StrokeShape="RoundRectangle 16"
+                    BackgroundColor="#1E293B" Padding="20">
+                <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center">
+                    <VerticalStackLayout Grid.Column="0" Spacing="5" VerticalOptions="Center">
+                        <Label Text="Escanear Asistencia" TextColor="#FFFFFF" FontAttributes="Bold" FontSize="18" />
+                        <Label Text="Activa la cámara para registrarte" TextColor="#94A3B8" FontSize="13" />
+                    </VerticalStackLayout>
+                    <Button Grid.Column="1"
+                            Text="📷"
+                            FontSize="24"
+                            BackgroundColor="#6366F1"
+                            TextColor="#FFFFFF"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            WidthRequest="50"
+                            Clicked="OnScannerClicked" />
+                </Grid>
+            </Border>
+
+            <!-- Botón 2: Historial -->
+            <Border Stroke="#334155" StrokeThickness="1"
+                    StrokeShape="RoundRectangle 16"
+                    BackgroundColor="#1E293B" Padding="20">
+                <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center">
+                    <VerticalStackLayout Grid.Column="0" Spacing="5" VerticalOptions="Center">
+                        <Label Text="Ver Historial" TextColor="#FFFFFF" FontAttributes="Bold" FontSize="18" />
+                        <Label Text="Revisa tus clases anteriores" TextColor="#94A3B8" FontSize="13" />
+                    </VerticalStackLayout>
+                    <Button Grid.Column="1"
+                            Text="📊"
+                            FontSize="24"
+                            BackgroundColor="#0EA5E9"
+                            TextColor="#FFFFFF"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            WidthRequest="50"
+                            Clicked="OnHistoryClicked" />
+                </Grid>
+            </Border>
+
+            <!-- Botón de Cerrar Sesión -->
+            <Button Text="Cerrar Sesión"
+                    Clicked="OnLogoutClicked"
+                    BackgroundColor="Transparent"
+                    TextColor="#EF4444"
+                    FontAttributes="Bold"
+                    Margin="0,30,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

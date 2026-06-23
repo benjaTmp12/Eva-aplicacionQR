@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eva_aplicacionQR.Views.LoginPage"
+             BackgroundColor="#0F172A"
+             Title="Iniciar Sesión">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+
+            <!-- Logo o Título -->
+            <VerticalStackLayout Spacing="5" HorizontalOptions="Center" Margin="0,0,0,20">
+                <Label Text="🎓" FontSize="72" HorizontalOptions="Center" />
+                <Label Text="AsisQR"
+                       TextColor="#FFFFFF"
+                       FontAttributes="Bold"
+                       FontSize="32"
+                       HorizontalOptions="Center" />
+                <Label Text="Portal del Estudiante"
+                       TextColor="#94A3B8"
+                       FontSize="16"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Formulario -->
+            <Border Stroke="#334155" StrokeThickness="1"
+                    StrokeShape="RoundRectangle 16"
+                    BackgroundColor="#1E293B" Padding="20">
+                <VerticalStackLayout Spacing="20">
+                    
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="Usuario" TextColor="#CBD5E1" FontSize="14" FontAttributes="Bold" />
+                        <Entry x:Name="UserEntry"
+                               Placeholder="Ej. 20215555"
+                               PlaceholderColor="#64748B"
+                               TextColor="#FFFFFF"
+                               BackgroundColor="#0F172A"
+                               ClearButtonVisibility="WhileEditing" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="Contraseña" TextColor="#CBD5E1" FontSize="14" FontAttributes="Bold" />
+                        <Entry x:Name="PasswordEntry"
+                               Placeholder="Ingresa tu contraseña"
+                               PlaceholderColor="#64748B"
+                               TextColor="#FFFFFF"
+                               BackgroundColor="#0F172A"
+                               IsPassword="True"
+                               ClearButtonVisibility="WhileEditing" />
+                    </VerticalStackLayout>
+
+                    <!-- Botón de Login -->
+                    <Button Text="INGRESAR"
+                            Clicked="OnLoginClicked"
+                            BackgroundColor="#6366F1"
+                            TextColor="#FFFFFF"
+                            FontAttributes="Bold"
+                            CornerRadius="8"
+                            HeightRequest="50"
+                            Margin="0,10,0,0" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
