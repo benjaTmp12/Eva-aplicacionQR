@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eva_aplicacionQR.Views.HistoryPage"
+             BackgroundColor="#0F172A"
+             Title="Historial">
+
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="20" RowSpacing="15">
+        <!-- Header -->
+        <VerticalStackLayout Grid.Row="0" Spacing="4" Margin="0,15,0,5">
+            <Label Text="Historial de Asistencia" TextColor="#FFFFFF" FontAttributes="Bold" FontSize="26" HorizontalOptions="Center" />
+            <Label Text="Tus registros de clases" TextColor="#94A3B8" FontSize="13" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <!-- Tarjeta de Resumen -->
+        <Border Grid.Row="1" Stroke="#6366F1" StrokeThickness="1" StrokeShape="RoundRectangle 16" BackgroundColor="#1E293B" Padding="15">
+            <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                <Label x:Name="TotalLabel" Text="Total: 0 clases" TextColor="#6366F1" FontAttributes="Bold" FontSize="22" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Border>
+
+        <!-- Lista de registros -->
+        <Grid Grid.Row="2">
+            <VerticalStackLayout x:Name="SinRegistrosLayout" VerticalOptions="Center" HorizontalOptions="Center" Spacing="10" IsVisible="True">
+                <Label Text="📭" FontSize="48" HorizontalOptions="Center" />
+                <Label Text="Aún no tienes registros." TextColor="#94A3B8" FontSize="14" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <CollectionView x:Name="RegistrosLista" IsVisible="False">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Stroke="#1E3A5F" StrokeThickness="1" StrokeShape="RoundRectangle 12" BackgroundColor="#1E293B" Padding="15" Margin="0,0,0,10">
+                            <Grid ColumnDefinitions="Auto, *" ColumnSpacing="15">
+                                <Label Grid.Column="0" Text="✅" FontSize="20" VerticalOptions="Center"/>
+                                <VerticalStackLayout Grid.Column="1" Spacing="3" VerticalOptions="Center">
+                                    <Label Text="{Binding CodigoClase}" TextColor="#FFFFFF" FontAttributes="Bold" FontSize="15" />
+                                    <Label Text="{Binding FechaHoraFormateada}" TextColor="#94A3B8" FontSize="12" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+        
+        <Button Grid.Row="3" Text="Volver al Menú" Clicked="OnBackClicked" BackgroundColor="Transparent" TextColor="#94A3B8" />
+    </Grid>
+</ContentPage>
