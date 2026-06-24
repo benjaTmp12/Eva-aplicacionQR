@@ -13,6 +13,9 @@ public partial class HistoryPage : ContentPage
     {
         base.OnAppearing();
         ActualizarUI();
+
+        // Intentar sincronizar pendientes cuando la página aparece
+        _ = AsistenciaService.SyncPendingAsync();
     }
 
     private async void ActualizarUI()
@@ -24,7 +27,7 @@ public partial class HistoryPage : ContentPage
         {
             SinRegistrosLayout.IsVisible = false;
             RegistrosLista.IsVisible = true;
-            RegistrosLista.ItemsSource = historial; // Ya viene ordenado de BD
+            RegistrosLista.ItemsSource = historial; // Fuente local
         }
         else
         {
@@ -33,7 +36,7 @@ public partial class HistoryPage : ContentPage
         }
     }
 
-    private async void OnBackClicked(object sender, EventArgs e)
+    private async void OnBackClicked(object? sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("..");
     }

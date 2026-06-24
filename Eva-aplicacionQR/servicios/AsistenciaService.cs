@@ -1,63 +1,90 @@
 using Eva_aplicacionQR.Modelos;
 using MySqlConnector;
+using Microsoft.Maui.Devices;
 
 namespace Eva_aplicacionQR.servicios;
 
 
 public static class AsistenciaService
 {
-    // Si pruebas en el Emulador Android, la IP debe ser 10.0.2.2 para acceder a tu localhost (XAMPP/WAMP)
-    // Si pruebas la app en "Windows Machine", la IP debe ser localhost o 127.0.0.1
-    private const string ConnectionString = "Server=10.0.2.2;Database=eva_asistencia;Uid=root;Pwd=;";
+    // Construye la cadena de conexión según la plataforma:
+    // - Android (emulador): 10.0.2.2 para acceder al localhost del host
+    // - Windows/otros: localhost
+    private static string GetConnectionString()
+    {
+        var server = DeviceInfo.Platform == DevicePlatform.Android ? "10.0.2.2" : "localhost";
+        return $"Server={server};Database=eva_asistencia;Uid=root;Pwd=;";
+    }
 
+    // Guarda localmente y trata de enviar al servidor. Siempre guarda local para asegurar persistencia offline.
     public static async Task RegistrarAsistenciaAsync(string codigoQR)
     {
+        // Guardar localmente primero
+        var registroLocal = new RegistroAsistencia { CodigoClase = codigoQR, FechaHora = DateTime.Now };
+        int localId = await LocalDbService.SaveLocalAsync(registroLocal);
+
         try
         {
-            using var connection = new MySqlConnection(ConnectionString);
+            using var connection = new MySqlConnection(GetConnectionString());
             await connection.OpenAsync();
 
             var query = "INSERT INTO RegistroAsistencia (CodigoClase, FechaHora) VALUES (@codigo, @fecha)";
             using var command = new MySqlCommand(query, connection);
             command.Parameters.AddWithValue("@codigo", codigoQR);
-            command.Parameters.AddWithValue("@fecha", DateTime.Now);
+            command.Parameters.AddWithValue("@fecha", registroLocal.FechaHora);
 
             await command.ExecuteNonQueryAsync();
-            System.Diagnostics.Debug.WriteLine($"[Servicio] Registrado en DB: {codigoQR}");
+            System.Diagnostics.Debug.WriteLine($"[Servicio] Registrado en DB remota: {codigoQR}");
+
+            // Marcar como sincronizado localmente
+            await LocalDbService.MarkAsSyncedAsync(localId);
         }
         catch (Exception ex)
         {
             System.Diagnostics.Debug.WriteLine($"[Error DB] {ex.Message}");
-            throw; // Re-lanzar para manejar el error en la UI si es necesario
+            // No relanzamos: el registro queda en local para reintentar luego
         }
     }
 
+    // Obtener historial desde la base local (fuente principal para la UI offline-first)
     public static async Task<List<RegistroAsistencia>> ObtenerHistorialAsync()
     {
-        var historial = new List<RegistroAsistencia>();
         try
         {
-            using var connection = new MySqlConnection(ConnectionString);
-            await connection.OpenAsync();
-
-            var query = "SELECT CodigoClase, FechaHora FROM RegistroAsistencia ORDER BY FechaHora DESC";
-            using var command = new MySqlCommand(query, connection);
-            using var reader = await command.ExecuteReaderAsync();
-
-            while (await reader.ReadAsync())
-            {
-                historial.Add(new RegistroAsistencia
-                {
-                    CodigoClase = reader.GetString("CodigoClase"),
-                    FechaHora = reader.GetDateTime("FechaHora")
-                });
-            }
+            return await LocalDbService.GetAllAsync();
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"[Error DB] {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"[Error Local DB] {ex.Message}");
+            return new List<RegistroAsistencia>();
         }
-        
-        return historial;
+    }
+
+    // Intentar sincronizar registros pendientes con el servidor
+    public static async Task SyncPendingAsync()
+    {
+        var pendientes = await LocalDbService.GetPendingAsync();
+        foreach (var p in pendientes)
+        {
+            try
+            {
+                using var connection = new MySqlConnection(GetConnectionString());
+                await connection.OpenAsync();
+
+                var query = "INSERT INTO RegistroAsistencia (CodigoClase, FechaHora) VALUES (@codigo, @fecha)";
+                using var command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@codigo", p.CodigoClase);
+                command.Parameters.AddWithValue("@fecha", p.FechaHora);
+
+                await command.ExecuteNonQueryAsync();
+                System.Diagnostics.Debug.WriteLine($"[Sync] Sincronizado remoto: {p.CodigoClase}");
+                await LocalDbService.MarkAsSyncedAsync(p.Id);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[Sync Error] {ex.Message}");
+                // Si falla, continuar con el siguiente
+            }
+        }
     }
 }
