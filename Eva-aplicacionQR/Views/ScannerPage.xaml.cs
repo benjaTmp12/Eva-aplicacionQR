@@ -53,6 +53,7 @@ public partial class ScannerPage : ContentPage
         }
     }
 
+
     private void OnBarcodesDetected(object? sender, BarcodeDetectionEventArgs e)
     {
         var primerCodigo = e.Results.FirstOrDefault();
@@ -81,9 +82,7 @@ public partial class ScannerPage : ContentPage
             await AsistenciaService.RegistrarAsistenciaAsync(textoCodigo);
             StatusLabel.Text = "Asistencia Registrada";
             StatusLabel.TextColor = Color.FromArgb("#34D399");
-            
-            // Navegar al historial automáticamente tras guardar
-            await Shell.Current.GoToAsync("../HistoryPage");
+            Vibration.Default.Vibrate(TimeSpan.FromMilliseconds(250));
         }
         catch (Exception)
         {
